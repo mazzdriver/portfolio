@@ -1,81 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-   <head>
-      <meta charset="utf-8">
-      <title>mazzdriver</title>
-      <meta name="description" content="mazzdriver portfolio">
-      <link rel="stylesheet" type="text/css" href="resume.css">
-   </head>
-   <body>
-      <table>
-         <tbody>
-            <tr>
-               <td>
-                   <img src="images/" alt="">
-               </td>
-               <td>
-                   <p class="name">Белоглазов Олег</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="block-name">Обо мне</p>
-               </td>
-               <td>
-                   <p class="basic-info">Санкт-Петербург, Россия 🇷🇺</p>
+  <head>
+    <meta charset="utf-8">
+    <title>mazzdriver</title>
+    <meta name="description" content="mazzdriver portfolio">
+    <link rel="stylesheet" type="text/css" href="resume.css">
+  </head>
+  <body>
+    <table>
+      <tbody>
+        <tr>                  
+          <td class="left-column">
+            <img class="photo" src="../images/me.jpg" alt="Вот он я красивый тут должен быть">
+          </td>
+          <td class="right-column">
+            <h1>Белоглазов Олег</h1>
+          </td>
+        </tr>
+        
+        <tr>                
+          <td><h2>Обо мне</h2></td>
+          <td><h2>Место работы</h2></td>
+        </tr>
+        
+        <tr>
+          <td class="left-column">
+            <p class="basic-info">Санкт-Петербург, Россия 🇷🇺</p>
 
-<!-- нужен счётчик возраста -->
+<!-- TODO: счётчик возраста -->
 
-                   <p class="basic-info">28 лет</p>
-                   <p class="basic-info">Мужчина</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="block-name">Контакты</p>
-                  <p class="contact">email: <a href="mailto:oleg@massdriver95.ru">oleg@massdriver95.ru</a></p>
-                  <p class="contact">Telegram: <a href="http://massdriver.t.me">@massdriver</a></p>
-                  <p class="contact">github: <a href="https://github.com/mazzdriver/">mazzdriver</a></p>
-                  <p class="contact">LinkedIn: <a href="https://www.linkedin.com/in/massdriver/">Oleg Beloglazov</a></p>
-               </td>
-               <td></td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="block-name">Навыки</p>
-                  <p class="list-item"></p>
-               </td>
-               <td></td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="block-name">Образование</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="block-name">Технологии</p>
-                  <p class="list-item">Асинхронность</p>
-                  <p class="list-item">Вёрстка</p>
-               </td>
-               <td>
-                  <p class="block-name">Языки</p>
-                  <p class="list-item">Python</p>
-                  <p class="list-item">HTML</p>
-                  <p class="list-item">SQL</p>
-                  <p class="list-item">Markdown</p>
-               </td>
-               <td>
-                  <p class="block-name">Фреймворки</p>
-                  <p class="list-item">asyncio</p>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-   </body>
+            <p class="basic-info">6 февраля 1995 г.р., <a id="year-counter">28 лет</a></p>
+            <p class="basic-info">Мужчина</p>
+          </td>
+          <td>
+            
+            <!-- TODO: отобразить последнее место работы -->
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="left-column">
+            <h2>Контакты</h2>
+            <p class="contact">email: <a href="mailto:oleg@massdriver95.ru">oleg@massdriver95.ru</a></p>
+            <p class="contact">Telegram: <a href="http://massdriver.t.me">@massdriver</a></p>
+            <p class="contact">github: <a href="https://github.com/mazzdriver/">mazzdriver</a></p>
+            <p class="contact">LinkedIn: <a href="https://www.linkedin.com/in/massdriver/">Oleg Beloglazov</a></p>
+          </td>
+          <td>
+            <a href="#works">Посмотреть, где ещё я работал</a>
+                   <!-- TODO: подтянуть запись из резюме -->
+           </td>
+         </tr>
+         
+         <tr>
+           <td class="left-column"">                    
+             <h2>Навыки</h2>
+           </td>
+           <td class="right-column">
+             <h2>Образование</h2>
+           </td>
+          </tr>
+          
+          <tr>
+            <td class="left-column">
+              <ul> <!-- Список навыков -->
+                
+                <!--  TODO: запихать список в джейсон?  -->
+                
+                <li>Программирование</li>
+                <li>ООП</li>
+                <li>Командная работа</li>
+                <li>Английский язык</li>
+                <li>Аккуратное вождение</li>
+                <li>Слесарные работы</li>
+                <li>Прокладка сетей водоснабжения</li>
+                <li>Прокладка электросетей до 1000 V</li>
+                <li>Альпинизм</li>
+                <li>Ремонт бытовой</li>                
+              </ul>
+            </td>
+          </tr>
+          
+          <tr> <!-- Заголовки про скиллы -->
+            <td class="first-column">
+              <h2>Технологии</h2>
+            </td>
+            <td class="second-column">
+              <h2>Языки</h2>   
+            </td>
+            <td class="third-column">
+              <h2>Фреймворки</h2>
+            </td>
+          </tr>
+          
+          <tr> <!-- Список технологий -->
+            <td>
+              <ul>
+                <li>Асинхронность</li>
+                <li>Вёрстка</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>Python</li>
+                <li>HTML</li>
+                <li>SQL</li>
+                <li>Markdown</li>
+              </ul>
+            </td>
+            <td>
+              <ul>
+                <li>asyncio</li>
+              </ul>
+            </td>
+          </tr>
+          
+          <tr>
+            <td>
+              <a name="works"></a>
+              <h4>Где я работал</h4>
+            </td>
+          </tr>
+          
+          <tr> <!-- Список мест работы -->
+          <!-- TODO: отображение только важных, остальные скрыты -->
+          <!-- TODO: сделать это из другого файла -->
+            <td>
+              <!-- картинка Флагмана -->
+            </td>
+            <td>
+              <!-- описание работы в Флагмане -->
+            </td>
+          </tr>
+          
+          <tr class="employment">
+            
+            <td class="employer-image">
+              <img src="" alt="Лого компании">
+            </td>
+            <td class="employer-description">
+              
+            </td>
+            
+          </tr>
+          
+      </tbody>
+    </table>
+  </body>
 </html>
 
 
+
+
+<!--
+<a name="works"></a>
 <p class="resume__title">Белоглазов Олег Геннадьевич</p>
 <p>
    Мужчина, 28 лет, родился 
@@ -289,3 +368,5 @@
    </li>
 </ul>
 </p>
+
+-->

@@ -208,3 +208,36 @@
     line-height: 15px;
     color: #707070
     }
+    
+    .block-name {
+    text-align: center;
+    }
+    
+.left-column {
+width: 25%;
+}
+    
+.right-column {
+width: 75%;
+colspan: 2; }
+    
+.first-column {
+width: 33%;
+}
+    
+.second-column {
+width: 33%;
+}
+    
+.third-column {
+width: 33%;
+}
+    
+.photo {
+width: 100%;
+}
+    
+h2,
+h4 {
+text-align: center;
+}
